@@ -113,7 +113,7 @@ def enter_details():
 @app.route('/logout')
 def logout():
     session.pop('user_id', None)
-    return redirect('/login')
+    return redirect('/')
 
 
 # Home API
